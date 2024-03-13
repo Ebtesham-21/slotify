@@ -1,3 +1,39 @@
+<?php 
+function sanitizeFormPassword($inputText){
+    $inputText = strip_tags($inputText);
+    return $inputText;
+
+}
+
+function sanitizeFromUsername($inputText) {
+    $inputText = strip_tags($inputText);
+    $inputText = str_replace(" ", "", $inputText);
+    return $inputText;
+}
+
+function sanitizeFormString($inputText) {
+    $inputText = strip_tags($inputText);
+    $inputText = str_replace(" ", "", $inputText);
+    $inputText = ucfirst(strtolower($inputText));
+    return $inputText;
+}
+if(isset($_POST['loginButton'])) {
+    
+}
+if(isset($_POST['registerButton'])) {
+    $username = sanitizeFormUsername($_POST['username']);
+    $firstName = sanitizeFormUsername($_POST['firstName']);
+    $lastName = sanitizeFormUsername($_POST['lastName']);
+    $email = sanitizeFormUsername($_POST['email']);
+    $email2 = sanitizeFormUsername($_POST['email2']);
+    $password = sanitizeFormUsername($_POST['password']);
+    $password2 = sanitizeFormUsername($_POST['password2']);
+
+
+
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +53,7 @@
             
             <p> 
                  <label for="loginPassword">Password</label>
-                 <input id="loginPassword" name="loginPassword" type="password"  required>
+                 <input id="loginPassword" name="loginPassword" type="password" placeholder="Your Password" required>
             </p>
             <button type="submit" name="loginButton">Login</button>
           
@@ -53,11 +89,11 @@
             </p>
             <p> 
                  <label for="loginPassword">Password</label>
-                 <input id="loginPassword" name="loginPassword" type="password"  required>
+                 <input id="loginPassword" name="loginPassword" placeholder="Your Password" type="password"  required>
             </p>
             <p> 
                  <label for="password2">Confirm Password</label>
-                 <input id="password2" name="password2" type="password"  required>
+                 <input id="password2" name="password2" type="password" placeholder="Your Password" required>
             </p>
             <button type="submit" name="registerButton">SIGN UP</button>
           
