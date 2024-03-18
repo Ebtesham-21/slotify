@@ -44,7 +44,12 @@
                 array_push($this->errorArray, Constants::$usernameCharacters);
                 return;
             }
-            //todo: check if username exists
+            $checkUsernameQuery = mysqli_query($this->con, "SELECT username FROM users WHERE username='$un'");
+            if(mysqli_num_rows($checkUsernameQuery !=0){
+                array_push($this->errorArray, Constants::$usernameTaken);
+                return;
+            }
+            )
 
 	
         }
