@@ -16,10 +16,12 @@ function getInputValue($name){
 <html>
 <head>
 	<title>Welcome to Slotify!</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/register.css">
 </head>
 <body>
-
-	<div id="inputContainer">
+	<div id="background">
+		<div id="loginContainer">
+		<div id="inputContainer">
 		<form id="loginForm" action="register.php" method="POST">
 			<h2>Login to your account</h2>
 			<p>
@@ -91,6 +93,10 @@ function getInputValue($name){
 
 
 	</div>
+
+		</div>
+	
+</div>
 
 </body>
 </html>
