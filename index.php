@@ -13,13 +13,30 @@ else {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+  
+    <link href='https://fonts.googleapis.com/css?family=Workbench' rel='stylesheet'>    
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
     <div id="nowPlayingBarContainer">
         <div id="nowPlayingBar">
             <div id="nowPlayingLeft">
+                <div class="content">
+                    <span class="albumLink">
+                        <img class="albumArtwork" src="https://img.freepik.com/premium-photo/painting-woman-with-colorful-scarf-her-head_860540-24.jpg?w=740" alt="">
+                    </span>
+                    <div class="trackInfo">
+                        <span class="trackName">
+                            <span>Song Name</span>
 
+                        </span>
+                        <span class="artistName">
+                            <span>Artist</span>
+
+                        </span>
+                    </div>
+                </div>
             </div>
             <div id="nowPlayingCenter">
                 <div class="content playerControls">
@@ -46,6 +63,18 @@ else {
                         </button>
 
                     </div>
+
+                    <div class="playbackBar">
+                        <span class="progressTime current">0.00</span>
+                        <div class="progressBar">
+                            <div class="progressBar">
+                                <div class="progressBarBg">
+                                    <div class="progress"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="progressTime remaining">0.00</span>
+                    </div>
                      
 
 
@@ -53,6 +82,17 @@ else {
 
             </div>
             <div id="nowPlayingRight">
+                <div class="volumeBar">
+                    <button class="controlButton volume" title="Volume button">
+                        <img src="assets/images/icons/volume.png" alt="volume">
+                    </button>
+                    <div class="progressBar">
+                                <div class="progressBarBg">
+                                    <div class="progress"></div>
+                                </div>
+                    </div>
+                </div>
+
 
             </div>
 

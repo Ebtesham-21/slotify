@@ -1,7 +1,13 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Workbench&display=swap'); */
 html,body {
     padding: 0;
     margin: 0;
     height: 100%;
+}
+
+* {
+    font-family: "Workbench";
+    color: aliceblue;
 }
 
 #nowPlayingBarContainer {
@@ -36,6 +42,7 @@ html,body {
 
 #nowPlayingCenter .content {
     width: 100%;
+    height: 57px;
 }
 
 .playerControls .buttons {
@@ -64,7 +71,71 @@ html,body {
     cursor: pointer;
 }
 
+.progressTime {
+    color: aliceblue;
+    font-size: 12px;
+    min-width: 40px;
+    text-align: center;
+}
 
+.playbackBar {
+    display: flex;
+}
 
+.progressBar {
+    width: 100%;
+    height: 12px;
+    display: inline-flex;
+    cursor: pointer;
+}
+
+.progressBarBg {
+    background-color: rgb(144, 144, 144);
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.progress {
+    background-color: aliceblue;
+    height: 4px;
+    width: 30%;
+    border-radius: 2px;
+}
+
+.playbackBar .progressBar {
+    margin-top: 3px;
+}
+
+#nowPlayingLeft .albumArtwork {
+    height: 100%;
+    max-width: 57px;
+    margin-right: 15px;
+    float: left;
+    background-size: cover;
+}
+
+#nowPlayingLeft .trackInfo {
+    display: table;
+}
+#nowPlayingLeft .trackInfo .trackName {
+    margin: 6px 0;
+    display: inline-block;
+    width: 100%;
+}
+#nowPlayingLeft .trackInfo .artistName  span{
+    font-size: 12px;
+    color: aliceblue;
+}
+
+.volumeBar {
+    width: 100px;
+    position: absolute;
+    right: 0;
+}
+
+.volumeBar .progressBar {
+    width: 125px;
+}
 
 
