@@ -32,6 +32,11 @@ html,body {
         min-width: 180px;
 }
 
+#nowPlayingRight {
+    position: relative;
+    margin-top: 16px;
+}
+
 #nowPlayingCenter {
     width: 40%;
     max-width: 700px;
@@ -136,6 +141,44 @@ html,body {
 
 .volumeBar .progressBar {
     width: 125px;
+}
+
+#topContianer {
+    min-height: 100%;
+    width: 100%;
+}
+
+#navBarContainer {
+    background-color: rgb(0, 0, 0);
+    width: 220px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navBar {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.navbar .group {
+    border-top: 1px solid #ffffff;
+    padding: 10px 0;
+}
+
+.navItem {
+    padding: 7px;
+    font-size: 16px;
+    font-weight: 700;
+    display: block;
+    letter-spacing: 1px;
 }
 
 

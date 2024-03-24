@@ -19,6 +19,34 @@ else {
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
+    <div id="mainContainer">
+        <div id="topContainer">
+            <div id="navBarContainer">
+                <div class="navBar">
+                    <a href="index.php" class="logo">
+                        <img src="assets/images/icons/logo-01.png" alt="">
+                    </a>
+                    <div class="group">
+                        <div class="navItem">
+                            <a href="search.php" class="navItemLink">Search</a>
+                        </div>
+                    </div>
+                    <div class="group">
+                    <div class="navItem">
+                            <a href="search.php" class="navItemLink">Browse</a>
+                        </div>
+                        <div class="navItem">
+                            <a href="search.php" class="navItemLink">Your Music</a>
+                        </div>
+                        <div class="navItem">
+                            <a href="search.php" class="navItemLink">User Name</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
     <div id="nowPlayingBarContainer">
         <div id="nowPlayingBar">
             <div id="nowPlayingLeft">
@@ -100,6 +128,9 @@ else {
 
 
     </div>
+
+    </div>
+    
     
 </body>
 </html>
