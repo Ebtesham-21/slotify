@@ -12,7 +12,7 @@ else {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Welcome to Slotify</title>
     
   
     <link href='https://fonts.googleapis.com/css?family=Workbench' rel='stylesheet'>    
@@ -24,3 +24,5 @@ else {
            <?php include("includes/navBarContainer.php"); ?>
            <div id="mainViewContainer">
                 <div id="mainContent">
+
+    
